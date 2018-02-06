@@ -14,5 +14,5 @@ sum = 0
 for number in listOfOtherNums:
     sum += number
 print(sum)
-if sumOfList == sum:
+if sumOfOtherList == sum:
     print('pass')
