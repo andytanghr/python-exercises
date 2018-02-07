@@ -29,12 +29,12 @@ attempts = 1
 #     attempts += 1
 
 
-# v3: computer guesses by binary search
+# v3: computer guesses by iterative binary search
 guess = random.randint(0, 100)
 high = 100
 low = 0
 while True:
-  print('Guess #{}: {}'.format(attempts,guess))
+  print('Guess #{}: {}'.format(attempts,guess)) # 'Guess #%s: %s' % (attempts, guess)
   if guess == target:
     print('The computer guessed correctly after {} tries.'.format(attempts))
     break
