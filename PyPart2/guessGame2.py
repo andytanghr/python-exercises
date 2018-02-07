@@ -1,9 +1,7 @@
 import random
 
 target = int(input('Enter a number between 0 and 100 for the computer to guess: '))
-attempts = 0
-# guessed = False
-# guesses = []
+attempts = 1
 
 # v1: computer guesses incrementally from 0 to 100:
 # for guess in range(0, 101):
@@ -17,7 +15,6 @@ attempts = 0
 #     print('The computer guessed too low.')
 
 # v2: computer guesses randomly
-# attempts = 1
 # while True:
 #   guess = random.randint(0, 100)
 #   print('Guess #{0}: {1}'.format(attempts, guess))
@@ -32,7 +29,7 @@ attempts = 0
 #     attempts += 1
 
 
-# v3: computer divides and conquers by binary guess
+# v3: computer guesses by binary search
 guess = random.randint(0, 100)
 high = 100
 low = 0
