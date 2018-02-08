@@ -13,3 +13,4 @@ for x in xs:
 
 plot.plot(xs, ys)
 plot.show()
+
