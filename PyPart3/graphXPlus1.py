@@ -1,5 +1,5 @@
-import matplotlib.pyplot
-matplotlib.use('Agg')
+import matplotlib.pyplot as plot
+# matplotlib.use('Agg')
 
 from matplotlib import pyplot
 
@@ -11,5 +11,5 @@ ys = []
 for x in xs:
   ys.append(f(x))
 
-pyplot.plot(xs, ys)
-pyplot.show()
+plot.plot(xs, ys)
+plot.show()
