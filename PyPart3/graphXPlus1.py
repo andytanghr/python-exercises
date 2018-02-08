@@ -1,4 +1,7 @@
-import matplotlib.pyplot as plot
+import matplotlib.pyplot
+matplotlib.use('Agg')
+
+from matplotlib import pyplot
 
 def f(x):
   return x + 1 
@@ -8,5 +11,5 @@ ys = []
 for x in xs:
   ys.append(f(x))
 
-plot.plot(xs, ys)
-plot.show()
+pyplot.plot(xs, ys)
+pyplot.show()

@@ -5,15 +5,15 @@
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
-            "implementation_version": "3.4.3",
+            "implementation_version": "3.6.4",
             "os_name": "posix",
             "platform_machine": "x86_64",
             "platform_python_implementation": "CPython",
             "platform_release": "17.3.0",
             "platform_system": "Darwin",
             "platform_version": "Darwin Kernel Version 17.3.0: Thu Nov  9 18:09:22 PST 2017; root:xnu-4570.31.3~1/RELEASE_X86_64",
-            "python_full_version": "3.4.3",
-            "python_version": "3.4",
+            "python_full_version": "3.6.4",
+            "python_version": "3.6",
             "sys_platform": "darwin"
         },
         "pipfile-spec": 6,
@@ -237,15 +237,6 @@
                 "sha256:9c4bd2d267b7153df9152698efb1050a5d84982d3384a37b2c1f7723ba3e7835"
             ],
             "version": "==4.3.2"
-        },
-        "typing": {
-            "hashes": [
-                "sha256:b2c689d54e1144bbcfd191b0832980a21c2dbcf7b5ff7a66248a60c90e951eb8",
-                "sha256:3a887b021a77b292e151afb75323dea88a7bc1b3dfa92176cff8e44c8b68bddf",
-                "sha256:d400a9344254803a2368533e4533a4200d21eb7b6b729c173bc38201a74db3f2"
-            ],
-            "markers": "python_version <= '3.4'",
-            "version": "==3.6.4"
         },
         "tzlocal": {
             "hashes": [
