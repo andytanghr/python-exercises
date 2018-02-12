@@ -1,3 +1,4 @@
+# Version 2 functionalizes the squares, renders rectangles natively, corrects white space padding
 from shapes import *
 
 setup(width=580, height=580)
@@ -9,7 +10,7 @@ penup()
 setpos(-155,-135)
 pendown()
 blue = '#015d9e'
-drawSquare(129, True, blue)
+drawSquare(140, True, blue)
 
 # draw yellow
 penup()
