@@ -1,4 +1,5 @@
-# Version 2 functionalizes the squares, renders rectangles natively, corrects white space padding
+# A turtle graphics rendering of Piet Mondrian's 1930 painting, Composition with Red, Blue, and Yellow.
+# Version 2 is to functionalize the squares, renders rectangles natively, corrects white space padding
 from shapes import *
 
 setup(width=580, height=580)
