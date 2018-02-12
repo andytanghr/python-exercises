@@ -16,7 +16,7 @@ def word_histogram():
         histogram[tempWord] += 1
       tempWord = ''
 
-  print(histogram)
+  # print(histogram)
   return histogram
 
   if __name__ == '__main__':

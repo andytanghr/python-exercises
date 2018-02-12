@@ -8,7 +8,7 @@ def letter_histogram():
       histogram[char] = 1
     else:
       histogram[char] += 1
-  print(histogram)
+  # print(histogram)
   return histogram
 
 if __name__ == '__main__':
