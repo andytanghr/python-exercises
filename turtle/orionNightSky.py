@@ -23,19 +23,21 @@ def drawOrion():
   # g star
   left(39.28)
   forward(318)
-  drawCircle(26.7), True, 'white')
+  drawCircle(26.7, True, 'white')
 
   # a star
   left(97.48)
   forward(347)
   drawCircle(40, True, 'white')
-
-  # k star
+  
+  # z star reorientation
   left(118.6)
   forward(461)
-  drawCircle( 26.5) # to test if the orientation of turtle matters for drawing circles. If perfect overlap of earlier z star, then it doesn't matter
-
-  right(33.03)
+  # drawCircle(26.5, False, 'white') # to test if the orientation of turtle matters for drawing circles. If perfect overlap of earlier z star, then it doesn't matter
+  home() # resets orientation 
+  
+  # k star
+  right(138.75)
   forward(367) # z star, return for orienting for next quadrilateral
   drawCircle(23, True, 'white')
 
