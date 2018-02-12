@@ -1,4 +1,6 @@
 # Using turtle graphics, orionNightSky.py generates the constellation Orion's outline connected with its seven main stars
+# Turtle draws from the z star to ensure no overlap in line drawing through all the stars
+# Drawing of Orion's belt stars is oriented at zero deg east
 # Float values are used to ensure precision of completing outline of two quadrilaterals in which one side of each is shared
 # Circles are drawn with a systematic error of a given star's pixel radius in the position the star's centers and orientation of the turtle at the start of drawing a given circle. In another version, drawing centered circles would be preferred.
 # source of sky map/star chart: https://www.iau.org/public/themes/constellations/
