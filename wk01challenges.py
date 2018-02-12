@@ -81,7 +81,7 @@ def findNthPrime(n):
         while len(primes) < n: 
             if isPrime(primeToTest) == True:
                 primes.append(primeToTest)
-            primeToTest += 2 # twin prime conjecture
+            primeToTest += 2 # twin prime conjecture to improve O(n) to O(n/2) but still linear O
     return primes[-1]
 
 # print(findNthPrime(10001)) # 104743
