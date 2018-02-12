@@ -1,19 +1,81 @@
 from shapes import *
 
-setup(width=568, height=568)
+setup(width=580, height=580)
 bgcolor('white')
-
+#speed(1)
 
 # draw blue
-setpos(-142,-142)
-drawSquare(129, True, (1, 93, 158))
-
+penup()
+setpos(-155,-135)
+pendown()
+blue = '#015d9e'
+drawSquare(129, True, blue)
 
 # draw yellow
-setpos(90,-142)
+penup()
+setpos(284,-217)
+pendown()
+yellow = '#eedc6d'
+drawSquare(43, True, yellow)
+setpos(284,-232)
+drawSquare(43, True, yellow)
 
 # draw red
+penup()
+setpos(284, 284)
+pendown()
+red = '#e02b25'
+drawSquare(437, True, red)
 
 # draw thicker line
+penup()
+setpos(-284,105)
+setheading(0)
+pencolor('black')
+pendown()
+pensize(36)
+forward(120)
 
-# draw thinner line
+# draw longest vertical thinner line
+penup()
+setpos(-155, 275)
+setheading(270)
+pencolor('black')
+pendown()
+pensize(18)
+forward(559)
+
+# draw longest horizontal thinner line
+penup()
+setpos(-284, -135)
+setheading(0)
+pencolor('black')
+pendown()
+pensize(18)
+forward(584)
+
+# draw shorter thinner lines
+# vertical 
+penup()
+setpos(232,-141)
+setheading(270)
+pencolor('black')
+pendown()
+pensize(18)
+forward(208)
+
+# horizontal
+penup()
+setpos(232,-217)
+setheading(0)
+pencolor('black')
+pendown()
+pensize(18)
+forward(43)
+
+
+
+
+
+
+#drawThinLine()
