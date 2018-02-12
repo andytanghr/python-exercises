@@ -87,8 +87,3 @@ def drawCircle(size=100, fill=False, hue='black'):
     end_fill()
   else:
     circle(size)
-      
-      
-        
-
-# mainloop()
