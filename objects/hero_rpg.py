@@ -1,4 +1,3 @@
-import math
 #!/usr/bin/env python
 
 # In this simple RPG game, the hero fights the goblin. He has the options to:
@@ -61,5 +60,4 @@ def main():
         # Goblin attacks hero
         goblin.attack(hero) # disable so that hero never dies
 
-        
 main()
