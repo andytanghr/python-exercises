@@ -1,3 +1,4 @@
+import math
 #!/usr/bin/env python
 
 # In this simple RPG game, the hero fights the goblin. He has the options to:
@@ -12,11 +13,6 @@ def main():
       self.name = name
       self.health = health
       self.power = power
-    #alive
-    #health
-    #power    
-    #print status
-    #attack
 
     def alive(self):
       return self.health > 0
@@ -37,7 +33,6 @@ def main():
 
   # class Goblin:
 
-#
   hero = Character('hero', 10, 5)
   goblin = Character('goblin', 6, 2)
 
@@ -53,6 +48,7 @@ def main():
       raw_input = input()
       if raw_input == "1":
         hero.attack(goblin)
+        goblin.health += hero.power # to make goblin a zombie that heals by amount hero attacks
       elif raw_input == "2":
         pass
       elif raw_input == "3":
@@ -63,6 +59,7 @@ def main():
 
       if goblin.alive():
         # Goblin attacks hero
-        goblin.attack(hero)
+        goblin.attack(hero) # disable so that hero never dies
 
+        
 main()
