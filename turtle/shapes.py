@@ -81,9 +81,26 @@ def drawStar(size=100, fill=False, hue='black'):
 
 def drawCircle(size=100, fill=False, hue='black'):
   color(hue)
+  # move into position
+  up()
+  right(90)
+  forward(size)
+  left(90)
+  down()
+  
+  def resetPathPosition(): 
+    up()
+    left(90)
+    forward(size)
+    right(90)
+    down()
+
   if fill == True:
     begin_fill()
     circle(size)
     end_fill()
+    resetPathPosition()
   else:
     circle(size)
+    up()
+    resetPathPosition()

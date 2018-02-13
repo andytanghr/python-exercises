@@ -75,7 +75,7 @@ pendown()
 pensize(18)
 forward(43)
 
-
+mainloop()
 
 
 

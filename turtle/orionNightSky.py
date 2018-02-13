@@ -1,15 +1,19 @@
-# Using turtle graphics, orionNightSky.py generates the constellation Orion's outline connected with its seven main stars
-# Turtle draws from the z star to ensure no overlap in line drawing through all the stars
-# Drawing of Orion's belt stars is oriented at zero deg east
-# Float values are used to ensure precision of completing outline of two quadrilaterals in which one side of each is shared
-# Circles are drawn with a systematic error of a given star's pixel radius in the position the star's centers and orientation of the turtle at the start of drawing a given circle. In another version, drawing centered circles would be preferred.
+# Using turtle graphics, orionNightSky.py generates the constellation Orion's outline connected with its seven main stars.
+# Turtle traces one path without overlap to draw all seven stars, in a figure eight.
+# Float values are used to ensure precision of completing outline of two quadrilaterals in which one side of each is shared.
+# Circles are drawn centered along the drawn path.
+# The drawing is in the point of view as if observing the constellation perpendicular to the ecliptic.
 # Source of sky map/star chart: https://www.iau.org/public/themes/constellations/
 
 from shapes import *
 
-setup(width=720, height=640)
+setup(width=1080, height=1080)
 bgcolor('black')
 pencolor('white')
+speed(8)
+home()
+angleCorrection = 36.64
+left(angleCorrection) # angle correction after each home() reset, to display constellation as if observed perpendicular to the ecliptic
 
 def drawOrion():
   # z star
@@ -37,8 +41,10 @@ def drawOrion():
   left(118.6)
   forward(461)
   # drawCircle(26.5, False, 'white') # to test if the orientation of turtle matters for drawing circles. If perfect overlap of earlier z star, then it doesn't matter
-  home() # resets orientation 
   
+  home() # resets orientation 
+  left(angleCorrection) 
+
   # k star
   right(138.75)
   forward(367) # z star, return for orienting for next quadrilateral
@@ -50,7 +56,9 @@ def drawOrion():
   drawCircle(41, True, 'white')
 
   # complete second quadrilateral, end drawing
-  left(109.42)
-  forward(417)
+  left(109.42-2.5)
+  forward(410)
+
+  mainloop()
 
 drawOrion()
