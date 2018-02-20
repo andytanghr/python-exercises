@@ -1,0 +1,37 @@
+'''
+load monster.png
+monster move
+	wrap monster if off screen
+change direction (any cardinal) every 2 secs
+'''
+
+check for collisions:
+if hero and goblin collides, play lose.wave, 'play again?'
+if hero and monster collide, play win.wav, 'play again?'
+if goblin or monster collides with screen edge, wrap or move in different direction?
+
+random generator
+
+track and display current level
+
+
+character:
+create sprite???
+def image load
+def draw
+def init
+	name
+	x position
+	y position
+	x speed
+	y speed
+	image 
+
+def move
+
+enemy(Character):
+def move: random motion
+
+goblin(enemy):
+monster(enemy):
+hero(character):
